@@ -20,22 +20,25 @@ menu:
   main:
     - name: Docs
       pageRef: /docs
-      weight: 1
+      weight: 2
     - name: About
       pageRef: /about
-      weight: 2
+      weight: 1
     - name: Contact ↗
-      url: "https://github.com/imfing"
+      url: "https://koiyocreate.com"
       weight: 3
     - name: STL & 3D Files ↗
       weight: 4
       url: "https://github.com/Nokoiyo/ourgreyworld-assets"
-    - name: Search
+    - name: Patreon ↗
       weight: 5
+      url: "https://github.com/Nokoiyo/ourgreyworld-assets"
+    - name: Search
+      weight: 6
       params:
         type: search
     - name: Twitter
-      weight: 6
+      weight: 7
       url: "https://twitter.com/"
       params:
         icon: x-twitter
