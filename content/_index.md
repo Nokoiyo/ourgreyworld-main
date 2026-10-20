@@ -1,5 +1,5 @@
 ---
-title: My Site
+title: Our Gray World
 toc: false
 ---
 
@@ -7,7 +7,7 @@ This is the landing page.
 
 ## Explore
 
-{{< cards >}}
+{{< cards cols ="1">}}
   {{< card link="docs" title="Docs" icon="book-open" >}}
   {{< card link="about" title="About" icon="user" >}}
 {{< /cards >}}
