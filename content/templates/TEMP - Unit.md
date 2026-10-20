@@ -1,10 +1,10 @@
 ---
-title:
-faction:
-type:
-draft:
+title: UnitName
+faction: Faction Name
+type: Test
+draft: "false"
 ---
-# FACTION NAME
-# FACTION NAME
+
+
 
 ## Unit Name

@@ -1,9 +1,15 @@
 ---
 title: Unit 01
-faction:
-type:
-draft:
+faction: FactionHere
+type: TypeHere
+draft: "false"
 ---
-# FACTION NAME
+This is a test.
 
-## Unit Name
+-----------
+
+This is where stuff will go
+
+
+------- 
+This is where other stuff will go.
