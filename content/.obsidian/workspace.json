@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Factions/Faction 01/Unit 01.md",
+                "file": "templates/TEMP - Unit.md",
                 "mode": "source",
-                "source": false
+                "source": true
               },
               "icon": "lucide-file",
-              "title": "Unit 01"
+              "title": "TEMP - Unit"
             }
           }
         ],
@@ -228,14 +228,15 @@
       "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "2ae4d7cc30ac1940",
+  "active": "7bf2dbe9eefa3ea9",
   "lastOpenFiles": [
+    "templates/TEMP - Faction.md",
+    "templates/TEMP - Unit.md",
+    "docs/Factions/Faction 02/_index.md",
+    "docs/Factions/Faction 01/Unit 01.md",
+    "docs/Factions/Faction 01/_index.md",
     "docs/Factions/_index.md",
     "docs/Factions/Faction 03/_index.md",
-    "docs/Factions/Faction 02/_index.md",
-    "docs/Factions/Faction 01/_index.md",
-    "docs/Factions/Faction 01/Unit 01.md",
-    "templates/TEMP - Unit.md",
     "docs/_index.md",
     "docs/Game Introduction.md",
     "docs/Game Rules/Simple Mechanics.md",
@@ -245,7 +246,6 @@
     "docs/Factions/Faction 01.md",
     "docs/Factions/Faction 01",
     "docs/Factions/Faction 02.md",
-    "templates/TEMP - Faction.md",
     "about.md",
     "templates",
     "_index.md",

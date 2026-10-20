@@ -1,8 +1,12 @@
 ---
 title: UnitName
 faction: Faction Name
-type: Test
+type: docs
 draft: "false"
+prev: docs/first-page
+next: docs/folder/leaf
+sidebar:
+  open: true
 ---
 
 
