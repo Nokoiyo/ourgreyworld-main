@@ -18,7 +18,7 @@ markup:
 
 menu:
   main:
-    - name: Docs
+    - name: Game Documentation
       pageRef: /docs
       weight: 2
     - name: About

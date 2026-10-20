@@ -55,7 +55,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/_index.md",
+                "file": "_index.md",
                 "mode": "source",
                 "source": false
               },
@@ -233,18 +233,18 @@
   },
   "active": "f9e59d265c778aba",
   "lastOpenFiles": [
+    "docs/Game Introduction.md",
+    "docs/_index.md",
+    "blog/_index.md",
+    "showcase",
     "_index.md",
     "about.md",
     "blog/Test Blog - 01.md",
-    "blog/_index.md",
-    "docs/Game Introduction.md",
     "docs/Game Rules/Simple Mechanics.md",
     "docs/Game Rules/_index.md",
     "docs/Factions/Faction 02.md",
     "docs/Factions/Faction 01.md",
-    "docs/_index.md",
     "docs/Factions/_index.md",
-    "Untitled",
     "docs/Game Rules",
     "blog"
   ]
