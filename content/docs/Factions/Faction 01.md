@@ -1,5 +1,5 @@
 ---
-title: Leaf Page
+title: Faction 01
 type: docs
 prev: docs/folder/
 ---

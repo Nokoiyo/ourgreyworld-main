@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/first-page.md",
+                "file": "docs/Game Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "first-page"
+              "title": "Game Introduction"
             }
           },
           {
@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Game Rules/_index.md",
+                "file": "docs/Game Introduction.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "Game Introduction"
             }
           }
         ],
@@ -235,13 +235,13 @@
   "lastOpenFiles": [
     "docs/Game Rules/Simple Mechanics.md",
     "docs/Game Rules/_index.md",
-    "docs/first-page.md",
+    "docs/Factions/Faction 02.md",
+    "docs/Factions/Faction 01.md",
+    "docs/Game Introduction.md",
     "docs/_index.md",
     "docs/Factions/_index.md",
     "Untitled",
     "docs/Game Rules",
-    "docs/Factions/Faction 01.md",
-    "docs/Factions/Faction 02.md",
     "blog/Test Blog - 01.md",
     "blog/_index.md",
     "blog",
