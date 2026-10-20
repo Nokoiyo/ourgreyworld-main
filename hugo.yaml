@@ -31,9 +31,9 @@ menu:
       weight: 4
       params:
         type: search
-    - name: GitHub
+    - name: STL & 3D Files
       weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
+      url: "https://github.com/Nokoiyo/ourgreyworld-assets"
       params:
         icon: github
     - name: Twitter
@@ -41,6 +41,7 @@ menu:
       url: "https://twitter.com/"
       params:
         icon: x-twitter
+    
 
 params:
   theme:
