@@ -41,30 +41,16 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "docs/Game Rules/_index.md",
+                "file": "docs/Factions/Faction 01/Unit 01.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
-            }
-          },
-          {
-            "id": "f9e59d265c778aba",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "_index.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "_index"
+              "title": "Unit 01"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -212,13 +198,23 @@
               "icon": "lucide-list",
               "title": "Outline"
             }
+          },
+          {
+            "id": "d110e1765931832e",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
-        ]
+        ],
+        "currentTab": 5
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -228,23 +224,34 @@
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "bases:Create new base": false
+      "bases:Create new base": false,
+      "table-editor-obsidian:Advanced Tables Toolbar": false
     }
   },
-  "active": "f9e59d265c778aba",
+  "active": "2ae4d7cc30ac1940",
   "lastOpenFiles": [
+    "templates/TEMP - Unit.md",
+    "docs/Factions/Faction 01/Unit 01.md",
+    "docs/Factions/Faction 02/_index.md",
+    "docs/Factions/Faction 01/_index.md",
+    "docs/Factions/Faction 02",
+    "docs/Factions/Faction 03/_index.md",
+    "docs/Factions/Faction 03",
+    "docs/Factions/_index.md",
+    "docs/Factions/Faction 01.md",
+    "docs/Factions/Faction 01",
+    "docs/Factions/Faction 02.md",
+    "templates/TEMP - Faction.md",
+    "about.md",
+    "templates",
+    "_index.md",
     "docs/Game Introduction.md",
     "docs/_index.md",
     "blog/_index.md",
     "showcase",
-    "_index.md",
-    "about.md",
     "blog/Test Blog - 01.md",
     "docs/Game Rules/Simple Mechanics.md",
     "docs/Game Rules/_index.md",
-    "docs/Factions/Faction 02.md",
-    "docs/Factions/Faction 01.md",
-    "docs/Factions/_index.md",
     "docs/Game Rules",
     "blog"
   ]
