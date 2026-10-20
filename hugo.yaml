@@ -1,5 +1,5 @@
 # Hugo configuration file
-title: Our Grey World
+title: My Site
 
 # import hextra as module
 module:
@@ -42,8 +42,7 @@ menu:
       params:
         icon: x-twitter
 
-
-params:c
+params:
 
 theme:
     default: system
