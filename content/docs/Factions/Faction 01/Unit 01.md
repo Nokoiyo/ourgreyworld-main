@@ -1,10 +1,9 @@
 ---
-title:
+title: Unit 01
 faction:
 type:
 draft:
 ---
-# FACTION NAME
 # FACTION NAME
 
 ## Unit Name

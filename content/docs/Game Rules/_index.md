@@ -1,5 +1,5 @@
 ---
-title: Factions
+title: Game Rules
 type: docs
 prev: docs/first-page
 next: docs/folder/leaf
