@@ -27,11 +27,11 @@ menu:
     - name: Contact ↗
       url: "https://github.com/imfing"
       weight: 3
-    - name: STL & 3D Files
-      weight: 5
+    - name: STL & 3D Files ↗
+      weight: 4
       url: "https://github.com/Nokoiyo/ourgreyworld-assets"
     - name: Search
-      weight: 4
+      weight: 5
       params:
         type: search
     - name: Twitter
