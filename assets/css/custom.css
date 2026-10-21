@@ -1,0 +1,45 @@
+﻿/* 1. Primary Accent Colors */
+:root, .dark {
+  --primary-hue: 185deg;
+  --primary-saturation: 90%;
+  --primary-lightness: 50%;
+}
+
+/* 2. Brute-Force Transparency on All Hextra Wrappers */
+html, body, .dark html, .dark body, 
+body > div:first-of-type, .hextra-container {
+  background-color: transparent !important;
+  background: transparent !important;
+}
+
+/* 3. The Blurred Background Image Layer */
+html::before {
+  content: "";
+  position: fixed;
+  top: -20px; left: -20px; right: -20px; bottom: -20px; 
+  background-image: linear-gradient(rgba(18, 18, 18, 0.6), rgba(18, 18, 18, 0.6)), url('/images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(1px); 
+  z-index: -999;
+  pointer-events: none;
+}
+
+/* 4. Glassmorphism for the Main Content Area */
+main {
+  background-color: rgba(255, 255, 255, 0.65) !important;
+  backdrop-filter: blur(0px) saturate(180%);
+  -webkit-backdrop-filter: blur(0px) saturate(180%); 
+  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  padding: 2rem !important;
+  margin: 0.5rem !important;
+}
+
+.dark main {
+  background-color: rgba(18, 18, 18, 0.65) !important;
+  border: 1px solid rgba(255, 255, 255, 0.08) !important;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
+}
