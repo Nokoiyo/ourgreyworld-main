@@ -13,7 +13,7 @@ All of our 3D STL files are free for personal use and remixing as well.
 Our aim is to create the most accessible wargaming experience possible, both in terms of start up and cost. 
 
 
-![](Grenadier_01_Concept_004.jpg)
+![](images/Grenadier_01_Concept_004.jpg)
 
 
 

@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_index.md",
+                "file": "about.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "about"
             }
           },
           {
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_index.md",
+                "file": "about.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -190,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_index.md",
+                "file": "about.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -232,10 +232,10 @@
   },
   "active": "080ffeffa45e10ea",
   "lastOpenFiles": [
+    "_index.md",
     "about.md",
     "docs/Factions/Faction 01/Unit 01.md",
     "docs/Factions/Faction 01/_index.md",
-    "_index.md",
     "blog/Test Blog - 01.md",
     "Grenadier_01_Concept_004.jpg",
     "Pasted image 20261021141405.png",

@@ -5,7 +5,7 @@ draft: "false"
 toc: false
 ---
 
-![[Grenadier_01_Concept_004.jpg]]
+![](images/Grenadier_01_Concept_004.jpg)
 
 
 ---
