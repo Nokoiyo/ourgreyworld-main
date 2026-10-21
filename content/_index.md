@@ -3,7 +3,16 @@ title: Our Grey World
 toc: false
 ---
 
-<div style="text-align: center;">This is the landing page</div>
+<div style="text-align: center;">An Open Source Wargame</div>
+
+
+
+
+<div style="text-align: center;">We're currently building something special, stay tuned. </div>
+
+
+
+
 
 ## Explore
 

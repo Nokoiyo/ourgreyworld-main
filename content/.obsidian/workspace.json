@@ -229,11 +229,14 @@
       "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "2ae4d7cc30ac1940",
+  "active": "7bf2dbe9eefa3ea9",
   "lastOpenFiles": [
+    "Grenadier_01_Concept_004.jpg",
+    "blog/Test Blog - 01.md",
     "_index.md",
-    "docs/_index.md",
     "blog/_index.md",
+    "about.md",
+    "docs/_index.md",
     "templates/TEMP - Unit.md",
     "templates/TEMP - Faction.md",
     "docs/Factions/Faction 02/_index.md",
@@ -249,10 +252,8 @@
     "docs/Factions/Faction 01.md",
     "docs/Factions/Faction 01",
     "docs/Factions/Faction 02.md",
-    "about.md",
     "templates",
     "showcase",
-    "blog/Test Blog - 01.md",
     "docs/Game Rules",
     "blog"
   ]
