@@ -22,6 +22,17 @@ toc: false
 
 
 
+
+
+
+
+## Quick Start
+
+{{< cards cols ="1">}}
+  {{< card link="docs" title="Game Documentation" icon="chevron-double-right" >}}
+{{< /cards >}}
+
+
 ## Explore
 
 {{< cards cols ="1">}}
@@ -31,15 +42,13 @@ toc: false
 
 
 
-
-
-
-## Our Grey World
-
-{{< cards cols ="1">}}
-  {{< card link="docs" title="Game Documentation" icon="chevron-double-right" >}}
-{{< /cards >}}
-
+{{< gallery type="mosaic" >}}
+{{< gallery-item src="images/Grenadier_01_Concept_004.jpg" caption="Grenadier" span="wide" >}}
+{{< gallery-item src="images/Grenadier_01_Concept_004.jpg" caption="Grenadier" span="wide" >}}
+{{< gallery-item src="images/Grenadier_01_Concept_004.jpg" caption="Grenadier" span="wide" >}}
+{{< gallery-item src="images/Grenadier_01_Concept_004.jpg" caption="Grenadier" span="wide" >}}
+{{< gallery-item src="images/Grenadier_01_Concept_004.jpg" caption="Grenadier" span="wide" >}}
+{{< /gallery >}}
 
 
 ![](images/Grenadier_01_Concept_004.jpg)
