@@ -16,6 +16,8 @@ Our aim is to create the most accessible wargaming experience possible, both in 
 ![](Grenadier_01_Concept_004.jpg)
 
 
+
+
 ## Our Plan
 
 {{% steps %}}
