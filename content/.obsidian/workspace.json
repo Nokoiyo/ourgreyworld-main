@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "templates/TEMP - Unit.md",
+                "file": "_index.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "TEMP - Unit"
+              "title": "_index"
             }
           }
         ],
@@ -210,7 +210,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       }
     ],
     "direction": "horizontal",
@@ -225,19 +225,21 @@
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "obsidian-markdown-formatting-assistant-plugin:Open Markdown Formatting Assistant": false
     }
   },
-  "active": "7bf2dbe9eefa3ea9",
+  "active": "2ae4d7cc30ac1940",
   "lastOpenFiles": [
-    "templates/TEMP - Faction.md",
+    "docs/_index.md",
+    "blog/_index.md",
     "templates/TEMP - Unit.md",
+    "templates/TEMP - Faction.md",
     "docs/Factions/Faction 02/_index.md",
     "docs/Factions/Faction 01/Unit 01.md",
     "docs/Factions/Faction 01/_index.md",
     "docs/Factions/_index.md",
     "docs/Factions/Faction 03/_index.md",
-    "docs/_index.md",
     "docs/Game Introduction.md",
     "docs/Game Rules/Simple Mechanics.md",
     "docs/Game Rules/_index.md",
@@ -249,7 +251,6 @@
     "about.md",
     "templates",
     "_index.md",
-    "blog/_index.md",
     "showcase",
     "blog/Test Blog - 01.md",
     "docs/Game Rules",
