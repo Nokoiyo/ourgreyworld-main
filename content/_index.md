@@ -42,11 +42,11 @@ toc: false
 
 
 {{< gallery type="mosaic" >}}
-  {{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}
-  {{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}
-  {{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}
-  {{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}{{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}
-  {{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}
+	{{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}
+	{{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}
+	{{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}
+	{{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}{{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}
+	{{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}
 {{< /gallery >}}
 
 
