@@ -1,19 +1,22 @@
 ---
 title: Our Grey World
-toc: false
+type: home
+draft: "false"
 ---
+
+![[Grenadier_01_Concept_004.jpg]]
+
+
 ---
 
 <div style="text-align: center;">An Open Source Wargame</div>
-
----
 
 <div style="text-align: center;">We're currently building something special, stay tuned. </div>
 
 ---
 
 
-![[Grenadier_01_Concept_004.jpg]]
+
 
 
 
@@ -29,10 +32,10 @@ toc: false
 
 
 
-## Our Gray World 
+## Our Grey World 
 
 {{< cards cols ="1">}}
   {{< card link="docs" title="Game Documentation" icon="chevron-double-right" >}}
 {{< /cards >}}
 
-For more information, visit [Hextra](https://imfing.github.io/hextra).
+

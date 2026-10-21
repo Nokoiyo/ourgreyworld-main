@@ -1,15 +1,7 @@
 ---
-title: Test Blog Post
+title: Building Something Cool
 date: 2026-10-20
 draft: "false"
 ---
-This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post.
-This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post.
-This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post.
-This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post.
-This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post.
-This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post.
-This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post.
-This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post.
-This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post. This is a test blog post.
 
+<div style="text-align: center;">Stay tuned for our launch release</div>

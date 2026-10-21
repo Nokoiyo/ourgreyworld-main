@@ -48,6 +48,16 @@ menu:
     
 
 params:
+  imageZoom:
+    enable: true
+
+  banner: 
+    key: "announcment-xxx"
+    message: 🎉 Welcome to the site! We're testing things currently. Stay tuned. 🎉
+
+  page: 
+    width: wide
+
   theme:
     default: system
     displayToggle: true
@@ -61,5 +71,5 @@ params:
     displayPoweredBy: true
 
   editURL:
-    enable: true
+    enable: false
     base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
