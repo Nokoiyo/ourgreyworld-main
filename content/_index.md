@@ -2,6 +2,7 @@
 title: Our Grey World
 type: home
 draft: "false"
+toc: false
 ---
 
 ![[Grenadier_01_Concept_004.jpg]]
