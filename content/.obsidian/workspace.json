@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_index.md",
+                "file": "about.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "about"
             }
           }
         ],
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_index.md",
+                "file": "about.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -190,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_index.md",
+                "file": "about.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -231,6 +231,7 @@
   },
   "active": "2ae4d7cc30ac1940",
   "lastOpenFiles": [
+    "_index.md",
     "docs/_index.md",
     "blog/_index.md",
     "templates/TEMP - Unit.md",
@@ -250,7 +251,6 @@
     "docs/Factions/Faction 02.md",
     "about.md",
     "templates",
-    "_index.md",
     "showcase",
     "blog/Test Blog - 01.md",
     "docs/Game Rules",

@@ -1,5 +1,5 @@
 ---
-title: Our Gray World
+title: Our Grey World
 toc: false
 ---
 
@@ -8,16 +8,19 @@ toc: false
 ## Explore
 
 {{< cards cols ="1">}}
-  {{< card link="docs" title="Game Documentation" icon="chevron-double-right" >}}
   {{< card link="about" title="About" icon="chevron-double-right" >}}
   {{< card link="Patreon" title="Patreon" icon="chevron-double-right" >}}
 {{< /cards >}}
 
 
----
 
 
 
-## Documentation
+
+## Our Gray World 
+
+{{< cards cols ="1">}}
+  {{< card link="docs" title="Game Documentation" icon="chevron-double-right" >}}
+{{< /cards >}}
 
 For more information, visit [Hextra](https://imfing.github.io/hextra).
