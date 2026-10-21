@@ -58,6 +58,10 @@ params:
   page: 
     width: wide
 
+  defaultTheme: "dark"
+
+  customJS: ["js/custom.js"]
+
   theme:
     default: system
     displayToggle: true

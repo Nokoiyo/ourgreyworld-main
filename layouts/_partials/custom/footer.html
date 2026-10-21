@@ -1,0 +1,16 @@
+<!-- Floating Toggle Button -->
+<button id="bg-toggle-btn" style="position: fixed; bottom: 20px; left: 20px; z-index: 9999; padding: 10px 15px; border-radius: 8px; background: #1a1a1a; border: 1px solid #444; color: #ffffff; font-weight: bold; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">🖼️ Toggle Book Mode</button>
+
+<script>
+  const btn = document.getElementById("bg-toggle-btn");
+  
+  const wantsImage = localStorage.getItem("imageMode") !== "false";
+  if (wantsImage) {
+    document.documentElement.classList.add("image-mode");
+  }
+
+  btn.addEventListener("click", function() {
+    document.documentElement.classList.toggle("image-mode");
+    localStorage.setItem("imageMode", document.documentElement.classList.contains("image-mode"));
+  });
+</script>
