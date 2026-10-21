@@ -1,11 +1,12 @@
 ---
-title: Our Grey World
+title:
 type: home
 draft: "false"
 toc: false
 ---
 
-![](images/Grenadier_01_Concept_004.jpg)
+![](images/ogw-logo.png)
+
 
 
 ---
@@ -33,10 +34,20 @@ toc: false
 
 
 
-## Our Grey World 
+## Our Grey World
 
 {{< cards cols ="1">}}
   {{< card link="docs" title="Game Documentation" icon="chevron-double-right" >}}
 {{< /cards >}}
 
 
+{{< gallery type="mosaic" >}}
+  {{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}
+  {{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}
+  {{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}
+  {{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}{{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}
+  {{< gallery-item src="images/Grenadier_01_Concept_004.jpg" thumb="images/Grenadier_01_Concept_004.jpg" width="1600" height="900" caption="Grenadier" span="wide" >}}
+{{< /gallery >}}
+
+
+![](images/Grenadier_01_Concept_004.jpg)
