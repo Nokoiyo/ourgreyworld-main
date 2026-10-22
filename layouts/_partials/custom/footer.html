@@ -1,16 +1,47 @@
-<!-- Floating Toggle Button -->
-<button id="bg-toggle-btn" style="position: fixed; top: 10px; left: 5px; z-index: 9999; padding: 10px 15px; border-radius: 0px; background: #FFFFFF; border: 1px solid #444; color: #1a1a1a; font-weight: bold; cursor: pointer; box-shadow: 0 4px 12px rgba(0,0,0,0.5);">📃Book Mode</button>
+<!-- 4-Option Theme Selector -->
+<div style="display: flex; justify-content: center; padding: 1rem 0; width: 100%;">
+  <select id="koiyo-theme-select" style="background: transparent; color: inherit; border: 1px solid rgba(156, 163, 175, 0.5); border-radius: 6px; padding: 6px 12px; font-size: 14px; cursor: pointer; outline: none; appearance: auto;">
+    <option value="dark" style="color: black;">Dark</option>
+    <option value="light" style="color: black;">Light</option>
+    <option value="paper-dark" style="color: black;">Paper Dark</option>
+    <option value="paper-light" style="color: black;">Paper Light</option>
+  </select>
+</div>
 
 <script>
-  const btn = document.getElementById("bg-toggle-btn");
+  const themeSelect = document.getElementById("koiyo-theme-select");
   
-  const wantsImage = localStorage.getItem("imageMode") !== "false";
-  if (wantsImage) {
-    document.documentElement.classList.add("image-mode");
+  function applyTheme(mode) {
+    const html = document.documentElement;
+    
+    // 1. Strip both classes first
+    html.classList.remove("dark", "image-mode");
+    
+    // 2. Apply classes based on the dropdown selection
+    if (mode === "dark") {
+      html.classList.add("dark", "image-mode");
+    } else if (mode === "light") {
+      html.classList.add("image-mode");
+    } else if (mode === "paper-dark") {
+      html.classList.add("dark");
+    } else if (mode === "paper-light") {
+      // No classes needed for plain Paper Light
+    }
+    
+    // 3. Save your custom preference
+    localStorage.setItem("koiyo-theme", mode);
+    
+    // 4. Force Hextra's native storage to match so the theme doesn't randomly switch back
+    localStorage.setItem("theme", mode.includes("dark") ? "dark" : "light");
   }
 
-  btn.addEventListener("click", function() {
-    document.documentElement.classList.toggle("image-mode");
-    localStorage.setItem("imageMode", document.documentElement.classList.contains("image-mode"));
+  // Load saved theme or default to the perfect 'Dark' setup
+  const savedTheme = localStorage.getItem("koiyo-theme") || "dark";
+  themeSelect.value = savedTheme;
+  applyTheme(savedTheme);
+
+  // Listen for the user clicking a new option
+  themeSelect.addEventListener("change", function(e) {
+    applyTheme(e.target.value);
   });
 </script>

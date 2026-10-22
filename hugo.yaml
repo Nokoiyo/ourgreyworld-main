@@ -63,11 +63,11 @@ params:
   customJS: ["js/custom.js"]
 
   theme:
-    default: system
+    default: dark
     displayToggle: true
 
   navbar:
-    displayTitle: true
+    displayTitle: false
     displayLogo: false
 
   footer:

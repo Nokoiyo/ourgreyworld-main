@@ -43,3 +43,8 @@ html.image-mode.dark main {
   border: 1px solid rgba(255, 255, 255, 0.08) !important;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
 }
+
+/* Hide Hextra's native theme toggle to prevent conflicts */
+.hextra-theme-toggle, button[title="Change theme"], div[title="Change theme"] {
+  display: none !important;
+}
