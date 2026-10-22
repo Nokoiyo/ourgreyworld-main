@@ -64,10 +64,10 @@ params:
 
   theme:
     default: dark
-    displayToggle: true
+    displayToggle: false
 
   navbar:
-    displayTitle: false
+    displayTitle: true
     displayLogo: false
 
   footer:

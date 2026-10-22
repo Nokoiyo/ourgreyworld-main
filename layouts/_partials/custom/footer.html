@@ -1,47 +1,63 @@
-<!-- 4-Option Theme Selector -->
+<!-- 3-Option Theme Selector -->
 <div style="display: flex; justify-content: center; padding: 1rem 0; width: 100%;">
   <select id="koiyo-theme-select" style="background: transparent; color: inherit; border: 1px solid rgba(156, 163, 175, 0.5); border-radius: 6px; padding: 6px 12px; font-size: 14px; cursor: pointer; outline: none; appearance: auto;">
-    <option value="dark" style="color: black;">Dark</option>
-    <option value="light" style="color: black;">Light</option>
-    <option value="paper-dark" style="color: black;">Paper Dark</option>
-    <option value="paper-light" style="color: black;">Paper Light</option>
+    <option value="dark" style="color: black;">Dark (Background & Glass)</option>
+    <option value="paper-dark" style="color: black;">Paper Dark (No Background)</option>
+    <option value="paper-light" style="color: black;">Paper Light (No Background)</option>
   </select>
 </div>
 
 <script>
-  const themeSelect = document.getElementById("koiyo-theme-select");
-  
-  function applyTheme(mode) {
+  (function() {
+    const themeSelect = document.getElementById("koiyo-theme-select");
     const html = document.documentElement;
-    
-    // 1. Strip both classes first
-    html.classList.remove("dark", "image-mode");
-    
-    // 2. Apply classes based on the dropdown selection
-    if (mode === "dark") {
-      html.classList.add("dark", "image-mode");
-    } else if (mode === "light") {
-      html.classList.add("image-mode");
-    } else if (mode === "paper-dark") {
-      html.classList.add("dark");
-    } else if (mode === "paper-light") {
-      // No classes needed for plain Paper Light
+
+    function applyTheme(mode) {
+      // 1. Strip custom classes
+      html.classList.remove("image-mode");
+      
+      // 2. Manage Hextra's core Dark/Light classes
+      if (mode.includes("dark")) {
+        html.classList.add("dark");
+        html.classList.remove("light");
+        localStorage.setItem("theme", "dark");
+      } else {
+        html.classList.remove("dark");
+        html.classList.add("light");
+        localStorage.setItem("theme", "light");
+      }
+      
+      // 3. Re-apply the glass background if needed
+      if (mode === "dark") {
+        html.classList.add("image-mode");
+      }
+      
+      // 4. Save preference
+      localStorage.setItem("koiyo-theme", mode);
     }
-    
-    // 3. Save your custom preference
-    localStorage.setItem("koiyo-theme", mode);
-    
-    // 4. Force Hextra's native storage to match so the theme doesn't randomly switch back
-    localStorage.setItem("theme", mode.includes("dark") ? "dark" : "light");
-  }
 
-  // Load saved theme or default to the perfect 'Dark' setup
-  const savedTheme = localStorage.getItem("koiyo-theme") || "dark";
-  themeSelect.value = savedTheme;
-  applyTheme(savedTheme);
+    // Load saved theme
+    const savedTheme = localStorage.getItem("koiyo-theme") || "dark";
+    if (themeSelect) themeSelect.value = savedTheme;
+    applyTheme(savedTheme);
 
-  // Listen for the user clicking a new option
-  themeSelect.addEventListener("change", function(e) {
-    applyTheme(e.target.value);
-  });
+    // Listen for user changes
+    if (themeSelect) {
+      themeSelect.addEventListener("change", function(e) {
+        applyTheme(e.target.value);
+      });
+    }
+
+    // --- THE CSS BODYGUARD ---
+    // This watches the <html> tag. If Hextra deletes the image-mode class 
+    // during page navigation, this instantly forces it back.
+    const observer = new MutationObserver(function() {
+      const currentMode = localStorage.getItem("koiyo-theme") || "dark";
+      if (currentMode === "dark" && !html.classList.contains("image-mode")) {
+         html.classList.add("image-mode");
+      }
+    });
+    
+    observer.observe(html, { attributes: true, attributeFilter: ["class"] });
+  })();
 </script>

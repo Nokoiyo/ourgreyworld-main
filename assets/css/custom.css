@@ -1,50 +1,74 @@
-﻿/* 1. Primary Accent Colors */
+﻿/* =========================================
+   1. GLOBAL VARIABLES & CUSTOMIZATION
+   ========================================= */
 :root, .dark {
-  --primary-hue: 185deg;
+  /* Base Theme Accent Colors */
+  --primary-hue: 185deg; 
   --primary-saturation: 90%;
   --primary-lightness: 50%;
+  
+  /* --- DARK GLASS MODE CUSTOMIZATION --- */
+  
+  /* Background Image Controls */
+  --bg-image-url: url('/images/bg.jpg');
+  --bg-blur-amount: 12px;
+  --bg-overlay-color: rgba(18, 18, 18, 0.6); /* Dark tint to protect text contrast */
+  
+  /* Frosted Glass Container Controls */
+  --glass-panel-color: rgba(18, 18, 18, 0.65); /* Charcoal transparency */
+  --glass-panel-blur: 16px;
+  --glass-border-color: rgba(255, 255, 255, 0.08); /* Faint highlight on the glass edge */
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4); /* Drop shadow depth */
 }
 
-/* 2. Transparency ONLY when Image Mode is active */
-html.image-mode, html.image-mode body, .dark.image-mode html, .dark.image-mode body, 
-html.image-mode body > div:first-of-type, html.image-mode .hextra-container {
+/* =========================================
+   2. HIDE DEFAULT THEME TOGGLE
+   ========================================= */
+/* Prevents Hextra's native switcher from conflicting with your 3-option dropdown */
+.hextra-theme-toggle, button[title="Change theme"], div[title="Change theme"] {
+  display: none !important;
+}
+
+/* =========================================
+   3. CORE TRANSPARENCY (GLASS MODE ONLY)
+   ========================================= */
+html.image-mode, 
+html.image-mode body, 
+html.image-mode body > div:first-of-type, 
+html.image-mode .hextra-container {
   background-color: transparent !important;
   background: transparent !important;
 }
 
-/* 3. The Blurred Background Layer (Image Mode Only) */
+/* =========================================
+   4. THE BACKGROUND IMAGE LAYER
+   ========================================= */
 html.image-mode::before {
   content: "";
   position: fixed;
   top: -20px; left: -20px; right: -20px; bottom: -20px; 
-  background-image: linear-gradient(rgba(18, 18, 18, 0.6), rgba(18, 18, 18, 0.6)), url('/images/bg.jpg');
+  
+  /* Pulls directly from your variables in Section 1 */
+  background-image: linear-gradient(var(--bg-overlay-color), var(--bg-overlay-color)), var(--bg-image-url);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  filter: blur(12px); 
+  
+  filter: blur(var(--bg-blur-amount)); 
   z-index: -999;
   pointer-events: none;
 }
 
-/* 4. Glassmorphism Containers (Image Mode Only) */
+/* =========================================
+   5. FROSTED GLASS MAIN CONTAINERS
+   ========================================= */
 html.image-mode main {
-  background-color: rgba(255, 255, 255, 0.65) !important;
-  backdrop-filter: blur(0px) saturate(180%);
-  -webkit-backdrop-filter: blur(0px) saturate(180%); 
-  border: 1px solid rgba(255, 255, 255, 0.5) !important;
+  background-color: var(--glass-panel-color) !important;
+  backdrop-filter: blur(var(--glass-panel-blur)) saturate(180%);
+  -webkit-backdrop-filter: blur(var(--glass-panel-blur)) saturate(180%); 
+  border: 1px solid var(--glass-border-color) !important;
   border-radius: 16px !important;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: var(--glass-shadow);
   padding: 2rem !important;
   margin: 1.5rem !important;
-}
-
-html.image-mode.dark main {
-  background-color: rgba(18, 18, 18, 0.65) !important;
-  border: 1px solid rgba(255, 255, 255, 0.08) !important;
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4);
-}
-
-/* Hide Hextra's native theme toggle to prevent conflicts */
-.hextra-theme-toggle, button[title="Change theme"], div[title="Change theme"] {
-  display: none !important;
 }
