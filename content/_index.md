@@ -26,7 +26,7 @@ toc: false
 ## Quick Start
 
 {{< cards cols ="2">}}
-  {{< card link="docs" title="Game Documentation" icon="chevron-double-right" >}}
+  {{< card link="..\Game Systems" title="Game Documentation" icon="chevron-double-right" >}}
   {{< card link="Faction 01" title="Faction 01" icon="chevron-double-right" >}}
 {{< /cards >}}
 

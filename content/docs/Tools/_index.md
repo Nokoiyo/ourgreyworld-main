@@ -1,9 +1,9 @@
 ---
-title: Game Introduction
+title: Game Tools
 type: docs
 prev: /
 next: docs/folder/
-weight: "1"
+weight: "3"
 ---
 
 A simple demo page.

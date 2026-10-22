@@ -1,17 +1,19 @@
 ---
-title: Documentation
-next: first-page
+title: Core Rules
+type: docs
+weight: 2
+prev: docs/first-page
+next: docs/folder/leaf
+sidebar:
+  open: true
 ---
+# These are our game systems.
 
-This is a demo of the theme's documentation layout.
 
-## Hello, World!
-```go {filename="main.go"}
-package main
+## Harrowing Skirmish
 
-import "fmt"
 
-func main() {
-    fmt.Println("Hello, World!")
-}
-```
+## Game 02
+
+
+## Game 03

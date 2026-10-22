@@ -1,0 +1,35 @@
+faction_id: "kni"
+faction_name: "Knights"
+point_limit_default: 1000
+
+units:
+  - id: "kni_commander"
+    name: "Knight Commander"
+    category: "Hero"
+    base_points: 75
+    model_count: 1
+    stats:
+      quality: "3+"
+      defense: "3+"
+    equipment: ["Power Sword", "Heavy Pistol"]
+    options:
+      - name: "Upgrade to Plasma Pistol"
+        points: 5
+      - name: "Tactical Master Trait"
+        points: 15
+
+  - id: "kni_infantry"
+    name: "Knight Infantry"
+    category: "Core"
+    base_points: 50
+    model_count: 5
+    stats:
+      quality: "4+"
+      defense: "4+"
+    equipment: ["Laser Rifle"]
+    options:
+      - name: "Add Heavy Bolter"
+        points: 15
+        max: 1
+      - name: "Add +5 Models"
+        points: 45

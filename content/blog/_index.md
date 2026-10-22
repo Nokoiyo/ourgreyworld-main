@@ -1,5 +1,5 @@
 ---
-title: Blog
+title: Releases
 ---
 <div style="text-align: center; margin-top: 1em;">
 {{< hextra/hero-badge link="index.xml" >}}
