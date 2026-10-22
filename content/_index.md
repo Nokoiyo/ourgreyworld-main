@@ -4,10 +4,7 @@ type: home
 draft: "false"
 toc: false
 ---
-
-![](images/ogw-logo.png)
-
-
+<img src="images/ogw-logo.png" alt="Studio Logo" class="adaptive-logo" />
 
 ---
 

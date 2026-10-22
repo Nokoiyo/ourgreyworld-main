@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_index.md",
+                "file": "docs/_index.md",
                 "mode": "source",
                 "source": true
               },
@@ -147,7 +147,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_index.md",
+                "file": "docs/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -190,7 +190,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_index.md",
+                "file": "docs/_index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -232,11 +232,11 @@
   },
   "active": "080ffeffa45e10ea",
   "lastOpenFiles": [
-    "docs/Factions/Faction 01/_index.md",
     "_index.md",
+    "blog/Test Blog - 01.md",
+    "docs/Factions/Faction 01/_index.md",
     "about.md",
     "docs/Factions/Faction 01/Unit 01.md",
-    "blog/Test Blog - 01.md",
     "Grenadier_01_Concept_004.jpg",
     "Pasted image 20261021141405.png",
     "docs/Game Introduction.md",

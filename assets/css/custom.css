@@ -11,14 +11,14 @@
   
   /* Background Image Controls */
   --bg-image-url: url('/images/bg.jpg');
-  --bg-blur-amount: 12px;
-  --bg-overlay-color: rgba(18, 18, 18, 0.6); /* Dark tint to protect text contrast */
+  --bg-blur-amount: 2px;
+  --bg-overlay-color: rgba(18, 18, 18, 0.1); /* Dark tint to protect text contrast */
   
   /* Frosted Glass Container Controls */
   --glass-panel-color: rgba(18, 18, 18, 0.65); /* Charcoal transparency */
-  --glass-panel-blur: 16px;
-  --glass-border-color: rgba(255, 255, 255, 0.08); /* Faint highlight on the glass edge */
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.4); /* Drop shadow depth */
+  --glass-panel-blur: 2px;
+  --glass-border-color: rgba(255, 255, 255, 0.1); /* Faint highlight on the glass edge */
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1); /* Drop shadow depth */
 }
 
 /* =========================================
@@ -71,4 +71,102 @@ html.image-mode main {
   box-shadow: var(--glass-shadow);
   padding: 2rem !important;
   margin: 1.5rem !important;
+}
+
+/* =========================================
+   6. ADAPTIVE LOGO (LIGHT MODE INVERSION)
+   ========================================= */
+/* Inverts white to black only when the .dark class is absent */
+html:not(.dark) .adaptive-logo {
+  filter: invert(100%);
+}
+
+/* Optional: Adds a smooth fade when the logo changes colors */
+.adaptive-logo {
+  transition: filter 0.3s ease-in-out;
+}
+
+/* =========================================
+   7. HIERARCHY / TOC BACKGROUND FIX
+   ========================================= */
+/* 1. Hijack Hextra's core background variables */
+html.image-mode, 
+html.image-mode body, 
+html.image-mode.dark {
+  --hx-body-bg: transparent !important;
+  --hx-bg: transparent !important;
+  --hx-card-bg: transparent !important;
+}
+
+/* 2. Annihilate backgrounds on anything structurally next to the main content */
+html.image-mode main ~ aside,
+html.image-mode main ~ aside *,
+html.image-mode article ~ aside,
+html.image-mode article ~ aside * {
+  background-color: transparent !important;
+  background: transparent !important;
+  background-image: none !important;
+}
+
+/* 3. Strip Tailwind's grid wrappers for the TOC */
+html.image-mode div[class*="xl:block"],
+html.image-mode nav[class*="toc"] {
+  background-color: transparent !important;
+  background: transparent !important;
+
+
+}
+
+/* Strip Hextra's prefixed sticky bottom container and fade shadow */
+html.image-mode .hextra-toc .hx-sticky,
+html.image-mode .hextra-toc .hx-bottom-0,
+html.image-mode aside .hx-sticky {
+  background-color: transparent !important;
+  background: transparent !important;
+  background-image: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+
+}
+
+/* =========================================
+   8. NUKE THE TOC BOTTOM BOX (TAILWIND ESCAPES)
+   ========================================= */
+/* 1. Target the button's parent container directly */
+html.image-mode div:has(> #backToTop) {
+  background-color: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
+}
+
+/* 2. Target the exact Tailwind utility classes using backslash escapes */
+html.image-mode .hx\:bg-white,
+html.image-mode .hx\:dark\:bg-dark {
+  background-color: transparent !important;
+}
+
+html.image-mode .hx\:shadow-\[0_-12px_16px_white\],
+html.image-mode .hx\:dark\:shadow-\[0_-12px_16px_\#111\] {
+  box-shadow: none !important;
+}
+
+html.image-mode .hx\:border-gray-200,
+html.image-mode .hx\:dark\:border-neutral-800 {
+  border-color: transparent !important;
+}
+
+/* =========================================
+   9. HEADER STABILITY FIX
+   ========================================= */
+html.image-mode header,
+html.image-mode header nav,
+html.image-mode header div[class*="bg-"],
+html.image-mode header div[class*="hx:"] {
+  background-color: transparent !important;
+  background: transparent !important;
+  background-image: none !important;
+  backdrop-filter: none !important;
+  box-shadow: none !important;
+  border-color: transparent !important;
 }
