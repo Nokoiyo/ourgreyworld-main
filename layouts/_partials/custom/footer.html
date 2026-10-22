@@ -1,7 +1,7 @@
 <!-- 3-Option Theme Selector -->
 <div style="display: flex; justify-content: center; padding: 1rem 0; width: 100%;">
-  <select id="koiyo-theme-select" style="background: transparent; color: inherit; border: 1px solid rgba(156, 163, 175, .5); border-radius: 6px; padding: 6px 12px; font-size: 14px; cursor: pointer; outline: none; appearance: auto;">
-    <option value="dark" style="color: black;">Default</option>
+  <select id="koiyo-theme-select" style="background: transparent; color: inherit; border: 1px solid rgba(156, 163, 175, 0.5); border-radius: 6px; padding: 6px 12px; font-size: 14px; cursor: pointer; outline: none; appearance: auto;">
+    <option value="dark" style="color: black;">Dark</option>
     <option value="paper-dark" style="color: black;">Paper Dark</option>
     <option value="paper-light" style="color: black;">Paper Light</option>
   </select>
@@ -12,52 +12,77 @@
     const themeSelect = document.getElementById("koiyo-theme-select");
     const html = document.documentElement;
 
+    function killBlackBox() {
+      const backBtn = document.getElementById("backToTop");
+      if (!backBtn || !backBtn.parentElement) return;
+      
+      if (html.classList.contains("image-mode")) {
+        backBtn.parentElement.style.setProperty("background", "transparent", "important");
+        backBtn.parentElement.style.setProperty("background-color", "transparent", "important");
+        backBtn.parentElement.style.setProperty("box-shadow", "none", "important");
+        backBtn.parentElement.style.setProperty("border-color", "transparent", "important");
+      } else {
+        backBtn.parentElement.style.removeProperty("background");
+        backBtn.parentElement.style.removeProperty("background-color");
+        backBtn.parentElement.style.removeProperty("box-shadow");
+        backBtn.parentElement.style.removeProperty("border-color");
+      }
+    }
+
     function applyTheme(mode) {
-      // 1. Strip custom classes
       html.classList.remove("image-mode");
       
-      // 2. Manage Hextra's core Dark/Light classes
       if (mode.includes("dark")) {
         html.classList.add("dark");
         html.classList.remove("light");
+        html.style.colorScheme = "dark"; // Forces browser scrollbars to dark mode
         localStorage.setItem("theme", "dark");
       } else {
         html.classList.remove("dark");
         html.classList.add("light");
+        html.style.colorScheme = "light";
         localStorage.setItem("theme", "light");
       }
       
-      // 3. Re-apply the glass background if needed
       if (mode === "dark") {
         html.classList.add("image-mode");
       }
       
-      // 4. Save preference
       localStorage.setItem("koiyo-theme", mode);
+      setTimeout(killBlackBox, 50); 
     }
 
-    // Load saved theme
     const savedTheme = localStorage.getItem("koiyo-theme") || "dark";
     if (themeSelect) themeSelect.value = savedTheme;
     applyTheme(savedTheme);
 
-    // Listen for user changes
     if (themeSelect) {
       themeSelect.addEventListener("change", function(e) {
         applyTheme(e.target.value);
       });
     }
 
-    // --- THE CSS BODYGUARD ---
-    // This watches the <html> tag. If Hextra deletes the image-mode class 
-    // during page navigation, this instantly forces it back.
+    // --- UPGRADED BODYGUARD ---
+    // Now protects BOTH the image-mode class AND the dark/light classes
     const observer = new MutationObserver(function() {
       const currentMode = localStorage.getItem("koiyo-theme") || "dark";
-      if (currentMode === "dark" && !html.classList.contains("image-mode")) {
-         html.classList.add("image-mode");
+      const wantsDark = currentMode.includes("dark");
+      const wantsImage = currentMode === "dark";
+      
+      let needsCorrection = false;
+      
+      if (wantsDark && !html.classList.contains("dark")) needsCorrection = true;
+      if (!wantsDark && html.classList.contains("dark")) needsCorrection = true;
+      if (wantsImage && !html.classList.contains("image-mode")) needsCorrection = true;
+      
+      if (needsCorrection) {
+         observer.disconnect(); // Pause to prevent a tug-of-war crash
+         applyTheme(currentMode); // Force the correct classes back
+         observer.observe(html, { attributes: true, attributeFilter: ["class"] }); // Resume guarding
       }
     });
     
     observer.observe(html, { attributes: true, attributeFilter: ["class"] });
+    setInterval(killBlackBox, 250);
   })();
 </script>

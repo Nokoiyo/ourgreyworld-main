@@ -12,10 +12,10 @@
   /* Background Image Controls */
   --bg-image-url: url('/images/bg.jpg');
   --bg-blur-amount: 2px;
-  --bg-overlay-color: rgba(18, 18, 18, 0.1); /* Dark tint to protect text contrast */
+  --bg-overlay-color: rgba(18, 18, 18, 0.65); /* Dark tint to protect text contrast */
   
   /* Frosted Glass Container Controls */
-  --glass-panel-color: rgba(18, 18, 18, 0.65); /* Charcoal transparency */
+  --glass-panel-color: rgba(18, 18, 18, 0.5); /* Charcoal transparency */
   --glass-panel-blur: 2px;
   --glass-border-color: rgba(255, 255, 255, 0.1); /* Faint highlight on the glass edge */
   --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1); /* Drop shadow depth */
